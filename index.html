@@ -3,12 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="theme-color" content="#1a2230">
+    <meta name="description" content="Perfil digital oficial de Luna - Identificación y contacto de emergencia.">
+    
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Luna - Identificación Oficial">
+    <meta property="og:description" content="Perfil digital de mascota con datos médicos y contacto de emergencia.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=1000&auto=format&fit=crop">
+
     <title>Luna - Pet ID</title>
     
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS (CDN para asegurar estilos rápidos sin configuración compleja) -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Playfair Display (Serif) & Lato (Sans) -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -19,12 +28,12 @@
     <style>
       body {
         font-family: 'Lato', sans-serif;
-        background-color: #e5e7eb; /* Outer background */
+        background-color: #e5e7eb;
       }
       .font-serif-custom {
         font-family: 'Playfair Display', serif;
       }
-      /* Hide scrollbar for cleaner mobile look */
+      /* Ocultar barra de scroll para estética móvil */
       ::-webkit-scrollbar {
         width: 0px;
         background: transparent;
@@ -33,17 +42,15 @@
   <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@18.2.0",
-    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
-    "react-dom": "https://esm.sh/react-dom@18.2.0",
-    "react/": "https://esm.sh/react@18.2.0/",
-    "react-dom/": "https://esm.sh/react-dom@18.2.0/"
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "react/": "https://esm.sh/react@^19.2.1/"
   }
 }
 </script>
 </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
